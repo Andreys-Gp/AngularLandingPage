@@ -1,0 +1,19 @@
+<form [formGroup]="formularioDocumento">
+  <div class="mb-3">
+    <label for="dni" class="form-label">Ingrese {{variableNueva}}:</label>
+    <input
+      [ngClass]="{
+        'is-invalid':
+          hasErrors('dni', 'required') || hasErrors('dni', 'minlength')
+      }"
+      type="text"
+      class="form-control"
+      id="dni"
+      formControlName="dni"
+    />
+    <div class="text-danger" *ngIf="hasErrors('dni', 'required')">
+      {{variableNueva}} requerido.
+    </div>
+  </div>
+
+</form>
