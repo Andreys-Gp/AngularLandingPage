@@ -87,12 +87,10 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/AngularLandingPage/",
-            "deployUrl": "/AngularLandingPage/",
             "dir": "dist/landing-page-angular/browser",
             "nojekyll": true,
-            "cname": "andreys-gp.github.io/AngularLandingPage",
             "skipBuild": false,
-            "keepPolyfills": true
+            "message": "Despliegue automático de AngularLandingPage"
           }
         }
       }
