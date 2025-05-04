@@ -6,10 +6,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './contactos.component.html',
   styleUrls: ['./contactos.component.css']
 })
+
 export class ContactosComponent implements OnInit , OnDestroy {
 
   formularioContacto: FormGroup
-  tipoDni: string=''; 
+  tipoDni: string='';
   mostrarDni: boolean=false;
  /*  usuarioActivo: any = {
     nombre: 'Andreys',
@@ -30,7 +31,7 @@ export class ContactosComponent implements OnInit , OnDestroy {
   ngOnDestroy(): void {
     console.log('Componente destruido');
   }
- 
+
   ngOnInit(): void {
     this.formularioContacto.get('nombre')?.setValue('Brayan')
     this.formularioContacto.get('apellido')?.disable()
@@ -40,11 +41,11 @@ export class ContactosComponent implements OnInit , OnDestroy {
       this.tipoDni=value
       //console.log(value);
     })
-    
-  
+
+
     console.log('Destruyendo el componente');
 
-    
+
 
     /* this.formularioContacto.valueChanges.subscribe(valor=>{
       console.log(valor)
